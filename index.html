@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="description" content="Proof of Concept of a product configurator with HTML, CSS only."
+    <title>POC Sofa Configurator 1</title>    
+    <meta name="theme-color" content="#ffffff"/> -->
+</head>
+<body>
+<div class="wrapper">
+    <main>
+        <form>
+          <div class="images">
+            <img class="base" src="/images/sofa-cf/sofa_base-trans.png" alt="base">
+          </div>
+          <div class="parts">
+            <h1>Nirusu Sofa</h1>
+            <h2>Pallet Paint</h2>
+            <ul class="pallet-list">
+              <li>
+                <input type="radio" id="palletChoice1" name="pallet" value="Giverny">
+                <label for="palletChoice1"><span class="swatch giverny" title="Giverny">Giverny</span></label>
+                <img class="pallet pallet-blue" src="/images/sofa-cf/pallet-giverny.png" alt="Giverny">
+              </li>
+              <li>
+                <input type="radio" id="palletChoice2" name="pallet" value="Pure">
+                <label for="palletChoice2"><span class="swatch pure" title="Pure">Pure</span></label>
+                <img class="pallet pallet-pure" src="/images/sofa-cf/pallet-pure.png" alt="pure">
+              </li>
+              <li>
+                <input type="radio" id="palletChoice3" name="pallet" value="Graphite">
+                <label for="palletChoice3"><span class="swatch graphite" title="Graphite">Graphite</span></label>
+                <img class="pallet pallet-graphite" src="/images/sofa-cf/pallet-graphite.png" alt="graphite">
+              </li>
+              <li>
+                <input type="radio" id="palletChoice4" name="pallet" value="Florence">
+                <label for="palletChoice4"><span class="swatch Florence" title="Graphite">Florence</span></label>
+                <img class="pallet pallet-Florence" src="/images/sofa-cf/pallet-florence.png" alt="Florence">
+              </li>
+              <li>
+                <input type="radio" id="palletOrange" name="pallet" value="Barcelona Orange">
+                <label for="palletOrange"><span class="swatch BarcelonaOrange" title="Barcelona Orange">Barcelona Orange</span></label>
+                <img class="pallet" src="/images/sofa-cf/pallet-barcelona-orange.png" alt="Barcelona Orange">
+              </li>
+              <li>
+                <input type="radio" id="palletArles" name="pallet" value="Arles">
+                <label for="palletArles"><span class="swatch arles" title="Arles">Arles Yellow</span></label>
+                <img class="pallet" src="/images/sofa-cf/pallet-arles-yellow.png" alt="Arles Yellow">
+              </li>
+              <li>
+                <input type="radio" id="palletProvence" name="pallet" value="Provence">
+                <label for="palletProvence"><span class="swatch provence" title="Provence">Provence</span></label>
+                <img class="pallet" src="/images/sofa-cf/pallet-provence.png" alt="Provence">
+              </li>
+              <li>
+                <input type="radio" id="palletEngYel" name="pallet" value="EngYel">
+                <label for="palletEngYel"><span class="swatch engyel" title="English Yellow">English Yellow</span></label>
+                <img class="pallet" src="/images/sofa-cf/pallet-english-yellow.png" alt="English Yellow">
+              </li>
+              <li>
+                <input type="radio" id="palletantibegreen" name="pallet" value="antibegreen">
+                <label for="palletantibegreen"><span class="swatch antibegreen" title="Antibe">Antibe</span></label>
+                <img class="pallet" src="/images/sofa-cf/pallet-antibe-green.png" alt="antibegreen">
+              </li>
+              <li>
+                <input type="radio" id="palletRed" name="pallet" value="red">
+                <label for="palletRed"><span class="swatch red" title="Emperor's Silk">Emperor's Silk</span></label>
+                <img class="pallet" src="/images/sofa-cf/pallet-emperor-silk.png" alt="red">
+              </li>
+              <li>
+                <input type="radio" id="palletPink" name="pallet" value="pink">
+                <label for="palletPink"><span class="swatch pink" title="Scandanavian Pink">Scandanavian Pink</span></label>
+                <img class="pallet" src="/images/sofa-cf/pallet-scandinavian-pink.png" alt="pink">
+              </li>
+              <li>
+                <input type="radio" id="palletChoiceNone" name="pallet" value="None">
+                <label for="palletChoiceNone">None</label>
+              </li>
+            </ul>
+            <h2>Mattresses</h2>
+            <ul class="mattress-list">
+              <li>
+                <input type="radio" id="mattressChoice1" name="mattress" value="Barcelona Orange">
+                <label for="mattressChoice1"><span class="swatch BarcelonaOrange" title="Barcelona Orange">Barcelona Orange</span></label>
+                <img class="mattress mattress-orange" src="/images/sofa-cf/mattress-orange.png" alt="Barcelona Orange">
+              </li>
+              <li>
+                <input type="radio" id="mattressChoice2" name="mattress" value="Green">
+                <label for="mattressChoice2"><span class="swatch green" title="Green">Green</span></label>
+                <img class="mattress mattress-Green" src="/images/sofa-cf/mattress-green.png" alt="pure">
+              </li>
+              <li>
+                <input type="radio" id="mattressChoice3" name="mattress" value="Red">
+                <label for="mattressChoice3"><span class="swatch red" title="Emperor's Silk">Emperor's Silk</span></label>
+                <img class="mattress" src="/images/sofa-cf/mattress-red.png" alt="red">
+              </li>
+              <li>
+                <input type="radio" id="mattressPink" name="mattress" value="Pink">
+                <label for="mattressPink"><span class="swatch pink" title="Scandanavian Pink">Scandanavian Pink</span></label>
+                <img class="mattress" src="/images/sofa-cf/mattress-pink.png" alt="pink">
+              </li>
+              <li>
+                <input type="radio" id="mattressBlue" name="mattress" value="Blue">
+                <label for="mattressBlue"><span class="swatch giverny" title="Giverny">Giverny</span></label>
+                <img class="mattress" src="/images/sofa-cf/mattress-blue.png" alt="blue">
+              </li>
+              <li>
+                <input type="radio" id="mattressChoiceNone" name="mattress" value="None">
+                <label for="mattressChoiceNone">None</label>
+              </li>
+            </ul>
+            <h2>Pillows</h2>
+            <ul class="pillows-list">
+              <li>
+                <input type="radio" id="pillowsChoice1" name="pillows" value="green">
+                <label for="pillowsChoice1"><span class="swatch green" title="English Yellow Green">English Yellow Green</span></label>
+                <img class="pillows pillows-green" src="/images/sofa-cf/pillows-green.png" alt="English Yellow Green">
+              </li>
+              <li>
+                <input type="radio" id="pillowsChoice2" name="pillows" value="Orange">
+                <label for="pillowsChoice2"><span class="swatch BarcelonaOrange" title="Orange">Orange</span></label>
+                <img class="pillows pillows-orange" src="/images/sofa-cf/pillows-orange.png" alt="pure">
+              </li>
+              <li>
+                <input type="radio" id="pillowsChoice3" name="pillows" value="Pink">
+                <label for="pillowsChoice3"><span class="swatch pink" title="Scandanavian Pink">Pink</span></label>
+                <img class="pillows pillows-pink" src="/images/sofa-cf/pillows-pink.png" alt="pure">
+              </li>
+              <li>
+                <input type="radio" id="pillowsRed" name="pillows" value="Red">
+                <label for="pillowsRed"><span class="swatch red" title="Emperor's Silk">Emperor's Silk</span></label>
+                <img class="pillows" src="/images/sofa-cf/pillows-red.png" alt="red">
+              </li>
+              <li>
+                <input type="radio" id="pillowsBlue" name="pillows" value="Blue">
+                <label for="pillowsBlue"><span class="swatch giverny" title="Giverny">Giverny</span></label>
+                <img class="pillows" src="/images/sofa-cf/pillows-blue.png" alt="blue">
+              </li>
+              <li>
+                <input type="radio" id="pillowsBrown" name="pillows" value="Brown">
+                <label for="pillowsBrown"><span class="swatch honfleurBrown" title="Honfleur">Honfleur</span></label>
+                <img class="pillows" src="/images/sofa-cf/pillows-brown.png" alt="brown">
+              </li>
+              <li>
+                <input type="radio" id="pillowsChoice4" name="pillows" value="None">
+                <label for="pillowsChoice4">None</label>
+              </li>
+            </ul>
+            <nav>
+              <input type="button" class="btn" value="Print" onClick="window.print()">
+            </nav>
+          </div>
+        </form>
+    </main>    
+</div>
+</body>
+</html>
