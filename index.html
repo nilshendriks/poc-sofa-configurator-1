@@ -7,7 +7,202 @@
     />
     <meta name="description" content="Proof of Concept of a product configurator with HTML, CSS only."
     <title>POC Sofa Configurator 1</title>    
-    <meta name="theme-color" content="#ffffff"/> -->
+    <meta name="theme-color" content="#ffffff"/>
+    <style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  * + * {
+    margin-top: 1.5em;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #444;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+  }
+
+  .pallet,
+  .mattress,
+  .pillows {
+    display: none;
+  }
+  input[type="radio"] {
+    /* visibility: hidden; */
+    display: none;
+  }
+  input[type="radio"] + label {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+
+  input[type="radio"] + label + img {
+    display: none;
+    z-index: 1;
+  }
+
+  input[type="radio"]:checked + label + img {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .images img {
+    display: block;
+    /* margin: 0 auto; */
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .parts {
+    position: fixed;
+    top: 0;
+    right: 0%;
+    margin: 0;
+    background-color: rgba(204, 204, 204, .5);
+    padding: 1em;
+    max-width: 220px;
+  }
+
+  .parts ul {
+    list-style: none;
+    margin: 0;
+  }
+  .parts li {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+
+  .parts li + li {
+    margin-top: 0;
+  }
+
+  input[type="radio"],
+  input[type="radio"] + label {
+    position: relative;
+    z-index: 2;
+  }
+
+  input[type="button"] {
+    display: block;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    width: 100%;
+    background-color: #0098cf;
+    color: white;
+    border: none;
+    position: relative;
+    z-index: 2;
+  }
+
+  .swatch {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    text-indent: -9999px;
+  }
+
+  .swatch:hover {
+    /* width: 80px;
+    height: 80px; */
+  }
+
+  .parts input[type="radio"]:checked + label .swatch {
+   border: 1px solid #000;
+  }
+
+  .giverny {
+    background-color: #0088d5;
+  }
+
+  .pure {
+    background-color: #e8e7e2;
+  }
+
+  .graphite {
+    background-color: #393833;
+  }
+
+  .Florence {
+    background-color: #229682;
+  }
+
+  .BarcelonaOrange {
+    background-color: #de7932;
+  }
+
+  .green {
+    background-color: #8cae4a;
+  }
+
+  .pink {
+    background-color: #d5887f;
+  }
+
+  .red {
+    background-color: #bd3641;
+  }
+
+  .arles {
+    background-color: #d99c20;
+  }
+
+  .provence {
+    background-color: #55a9b9;
+  }
+
+  .engyel {
+    background-color: #d4bb3c;
+  }
+
+  .antibegreen {
+    background-color: #5bb842;
+  }
+
+  .honfleurBrown {
+    background-color: #534137;
+  }
+
+
+  @media print {
+    .parts {
+      /* display: none; */
+      background-color: transparent;
+    }
+
+    .parts * {
+      /* display: none; */
+      visibility: hidden;
+    }
+
+    .parts input[type="radio"]:checked + label + img {
+      /* display: block; */
+      visibility: visible;
+    }
+  }
+  </style>
 </head>
 <body>
 <div class="wrapper">
